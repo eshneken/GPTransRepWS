@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<jdevws:WebService xmlns:jdevws="http://xmlns.oracle.com/jdeveloper/10130/webservice">
+   <list n="CHILD_NODES">
+      <url path="../../../../../../../public_html/WEB-INF/wsdl/execute_pttService.wsdl"/>
+      <url path="../../../../../../org/gp/orcl/xsd/trresponse/ObjectFactory.java"/>
+      <url path="../../../../../../org/gp/orcl/xsd/trresponse/package-info.java"/>
+      <url path="../../../../../../org/gp/orcl/xsd/trrequest/package-info.java"/>
+      <url path="../../../../../../org/gp/orcl/xsd/trresponse/TransactionReportResponse.java"/>
+      <url path="../../../../../../org/gp/orcl/xsd/trrequest/ObjectFactory.java"/>
+      <url path="../../../../../../org/gp/orcl/xsd/trrequest/TransactionReportRequest.java"/>
+      <url path="ExecutePttImpl.java"/>
+   </list>
+   <hash n="DATA_MODEL">
+      <value n="ATTACHMENT_ENCODING" v="MIME"/>
+      <list n="BD_">
+         <hash>
+            <value n="BD_DEFAULT_DOCUMENT_WRAPPED" v="false"/>
+            <value n="BOUND_PORT_TYPE" v="{http://xmlns.oracle.com/GPSvcBusApp/GPTransRepOSB/GPTransRepPipeline}execute_ptt"/>
+            <value n="DEFAULT_NAME" v="false"/>
+            <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPBinding"/>
+            <value n="NAME" v="{http://xmlns.oracle.com/GPSvcBusApp/GPTransRepOSB/GPTransRepPipeline}execute_bind"/>
+            <list n="OP_BINDINGS">
+               <hash>
+                  <value n="BD_RESPONSE_PART" v="response"/>
+                  <value n="BD_SOAP_ACTION" v="getTransRep"/>
+                  <value n="BD_WSDL_RETURN_NAME" v="transaction_report_response"/>
+                  <value n="BD_WSDL_RETURN_TNS" v="http://www.gp.org/orcl/xsd/trresponse"/>
+                  <value n="BOUND_OPERATION" v="org.gp.orcl.xsd.trresponse.TransactionReportResponse.getTransRep.org.gp.orcl.xsd.trrequest.TransactionReportRequest"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+            </list>
+            <hash n="PROPERTY_GROUPS"/>
+         </hash>
+      </list>
+      <list n="BINDING_FILES"/>
+      <value n="GENERATION_OPTION" v="ANNOTATIONS_WSDL"/>
+      <value n="GUID" v="83d2240d-0152-1000-8001-c0a80f0adb86"/>
+      <value n="LAST_GENERATION_BOTTOM_UP" v="false"/>
+      <list n="LOCAL_FILES"/>
+      <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaWebService"/>
+      <list n="PO_">
+         <hash>
+            <value n="DEFAULT_NAME" v="true"/>
+            <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPPort"/>
+            <value n="NAME" v="execute_bindPort"/>
+            <value n="PORT_BINDING_NAME" v="{http://xmlns.oracle.com/GPSvcBusApp/GPTransRepOSB/GPTransRepPipeline}execute_bind"/>
+            <list n="PORT_OPS">
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="org.gp.orcl.xsd.trresponse.TransactionReportResponse.getTransRep.org.gp.orcl.xsd.trrequest.TransactionReportRequest"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+            </list>
+            <hash n="PROPERTY_GROUPS"/>
+            <url n="URL" protocol="http" host="localhost" port="7101" path="/GPWebSvcApp-GPTransRepWS-context-root/execute_pttService"/>
+         </hash>
+      </list>
+      <hash n="PROPERTY_GROUPS">
+         <hash n="WSDL_TO_JAVA_PROPERTIES">
+            <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.WSDLToJavaProperties"/>
+         </hash>
+      </hash>
+      <list n="PT_">
+         <hash>
+            <value n="AUTO_SERVICE_INTERFACE"/>
+            <value n="DEFAULT_NAME" v="false"/>
+            <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaPortType"/>
+            <value n="NAME" v="{http://xmlns.oracle.com/GPSvcBusApp/GPTransRepOSB/GPTransRepPipeline}execute_ptt"/>
+            <list n="OP_">
+               <hash>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaOperation"/>
+                  <value n="OP_JAVA_NAME" v="getTransRep"/>
+                  <list n="OP_JAVA_PARAMETERS">
+                     <hash>
+                        <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaParameter"/>
+                        <value n="NAME" v="request"/>
+                        <value n="PA_MODE" v="0"/>
+                        <value n="PA_WSDL_NAME" v="transaction_report_request"/>
+                        <value n="PA_WSDL_PART_NAME" v="request"/>
+                        <value n="TARGET_NAMESPACE" v="http://www.gp.org/orcl/xsd/trrequest"/>
+                        <value n="TYPE" v="org.gp.orcl.xsd.trrequest.TransactionReportRequest"/>
+                     </hash>
+                  </list>
+                  <value n="OP_JAVA_RETURN_TYPE" v="org.gp.orcl.xsd.trresponse.TransactionReportResponse"/>
+                  <value n="OP_NAME" v="getTransRep"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+            </list>
+            <hash n="PROPERTY_GROUPS"/>
+            <value n="PT_CLASS" v="com.oracle.xmlns.gpsvcbusapp.gptransreposb.gptransreppipeline.ExecutePttImpl"/>
+            <value n="PT_TOP_DOWN_GENERATED_SEI_NAME" v="com.oracle.xmlns.gpsvcbusapp.gptransreposb.gptransreppipeline.ExecutePtt"/>
+         </hash>
+      </list>
+      <value n="SERVICE_ASYNC" v="false"/>
+      <url n="TARGET_PROJECT" path="../../../../../../../GPTransRepWS.jpr"/>
+      <value n="TOPDOWN_GENERATION_OPTION" v="JAVA"/>
+      <list n="WS_DEPENDENT_VALUE_TYPES"/>
+      <value n="WS_ORIG_GEN_DIRECTION" v="TOP_DOWN"/>
+      <url n="WS_REFERENCE_WSDL" path="../../../../../../../public_html/WEB-INF/wsdl/execute_pttService.wsdl"/>
+      <value n="WS_TARGET_NAMESPACE" v="http://xmlns.oracle.com/GPSvcBusApp/GPTransRepOSB/GPTransRepPipeline"/>
+      <value n="WS_URI" v="execute_pttService"/>
+      <url n="WS_WSDL_FILE" path="../../../../../../../public_html/WEB-INF/wsdl/execute_pttService.wsdl"/>
+      <value n="WS_WSDL_LOC_ON_SEI" v="false"/>
+      <value n="WS_WSDL_LOC_VALUE" v="/WEB-INF/wsdl/execute_pttService.wsdl"/>
+      <list n="WSDL_DEPENDENT_FILES">
+         <url path="../../../../../../../public_html/WEB-INF/wsdl/transaction_report_response.xsd"/>
+         <url path="../../../../../../../public_html/WEB-INF/wsdl/transaction_report_request.xsd"/>
+      </list>
+   </hash>
+</jdevws:WebService>
